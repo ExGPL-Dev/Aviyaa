@@ -7,11 +7,11 @@
 </p>
 
 <p align="center">
-<a href="https://github.com/CYB3RB0I/Aviyaa/stargazers"><img src="https://img.shields.io/github/stars/CYB3RB0I/Aviyaa?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a>
-<a href="https://github.com/CYB3RB0I/Aviyaa/network/members"> <img src="https://img.shields.io/github/forks/CYB3RB0I/Aviyaa?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
-<a href="https://github.com/CYB3RB0I/Aviyaa/blob/main/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge" alt="License" /> </a>
+<a href="https://github.com/ExGPL-Dev/Aviyaa/stargazers"><img src="https://img.shields.io/github/stars/ExGPL-Dev/Aviyaa?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a>
+<a href="https://github.com/ExGPL-Dev/Aviyaa/network/members"> <img src="https://img.shields.io/github/forks/ExGPL-Dev/Aviyaa?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
+<a href="https://github.com/ExGPL-Dev/Aviyaa/blob/main/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge" alt="License" /> </a>
 <a href="https://www.python.org/"> <img src="https://img.shields.io/badge/Written%20in-Python-orange?style=for-the-badge&logo=python" alt="Python" /> </a>
-<a href="https://github.com/CYB3RB0I/Aviyaa/commits/main"> <img src="https://img.shields.io/github/last-commit/CYB3RB0I/Aviyaa?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
+<a href="https://github.com/ExGPL-Dev/Aviyaa/commits/main"> <img src="https://img.shields.io/github/last-commit/ExGPL-Dev/Aviyaa?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
 </p>
 
 ---
@@ -37,13 +37,13 @@ STRING_SESSION=
 
 SUPPORT_CHAT="https://t.me/AviyaaLogs"
 SUPPORT_CHANNEL="https://t.me/AviyaaMusic"
-UPSTREAM_REPO="https://github.com/CYB3RB0I/Aviyaa"
+UPSTREAM_REPO="https://github.com/ExGPL-Dev/Aviyaa"
 ```
 
 ## 🚀 Deploy on VPS / Localhost
 # Clone the repository
 ```
-git clone https://github.com/CYB3RB0I/Aviyaa && cd Aviyaa
+git clone https://github.com/ExGPL-Dev/Aviyaa && cd Aviyaa
 ```
 
 # Upgrade & install dependencies
