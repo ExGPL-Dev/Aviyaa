@@ -271,7 +271,7 @@ async def msg_quotly_cmd(self: app, ctx: Message):
                         message_ids=range(
                             ctx.reply_to_message.id,
                             ctx.reply_to_message.id + (check_arg[1] + 5),
-                        replies=-1,
+                        )
                     )
                     if not i.empty and not i.media
                 ]
@@ -290,7 +290,7 @@ async def msg_quotly_cmd(self: app, ctx: Message):
     
     try:
         messages_one = await self.get_messages(
-            chat_id=ctx.chat.id, message_ids=ctx.reply_to_message.id, replies=-1
+            chat_id=ctx.chat.id, message_ids=ctx.reply_to_message.id
         )
         messages = [messages_one]
     except Exception as e:
