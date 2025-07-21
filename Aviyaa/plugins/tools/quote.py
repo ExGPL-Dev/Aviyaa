@@ -211,7 +211,7 @@ async def pyrogram_to_quotly(messages, is_reply):
         the_message_dict_to_append["from"][
             "username"
         ] = await get_message_sender_username(message)
-        the_message_dict_to_append["from"]["type"] = message.chat.type.name.lower()
+        the_message_dict_to_append["from"]["type"] = message.chat.type.name.lower() if message.chat else "private"
         the_message_dict_to_append["from"]["photo"] = await get_message_sender_photo(
             message
         )
@@ -249,7 +249,7 @@ async def msg_quotly_cmd(self: app, ctx: Message):
         check_arg = isArgInt(ctx.command[1])
         if check_arg[0]:
             if check_arg[1] < 2 or check_arg[1] > 10:
-                return await ctx.reply_msg("Invalid range", del_in=6)
+                return await ctx.reply_text("Invalid range", del_in=6)
             try:
                 messages = [
                     i
@@ -271,20 +271,20 @@ async def msg_quotly_cmd(self: app, ctx: Message):
                 bio_sticker.name = "misskatyquote_sticker.webp"
                 return await ctx.reply_sticker(bio_sticker)
             except Exception:
-                return await ctx.reply_msg("🤷🏻‍♂️")
+                return await ctx.reply_text("🤷🏻‍♂️")
     try:
         messages_one = await self.get_messages(
             chat_id=ctx.chat.id, message_ids=ctx.reply_to_message.id, replies=-1
         )
         messages = [messages_one]
     except Exception:
-        return await ctx.reply_msg("🤷🏻‍♂️")
+        return await ctx.reply_text("🤷🏻‍♂️")
     try:
         make_quotly = await pyrogram_to_quotly(messages, is_reply=is_reply)
         bio_sticker = BytesIO(make_quotly)
         bio_sticker.name = "misskatyquote_sticker.webp"
         return await ctx.reply_sticker(bio_sticker)
     except Exception as e:
-        return await ctx.reply_msg(f"ERROR: {e}")
+        return await ctx.reply_text(f"ERROR: {e}")
 # ---------------------------------------------------------------------------------
 
