@@ -82,14 +82,14 @@ async def take_ss(_, message: Message):
         await app.send_message(chat_id=message.chat.id, text=report)
         return  # Do not respond to user
 
-    m = await eor(message, text="Taking screenshot...")
+    m = await eor(message, text="**Taking screenshot...**")
 
     try:
         photo = await take_screenshot(url, full)
         if not photo:
-            return await m.edit("Screenshot Failed.")
+            return await m.edit("**ғᴀɪʟᴇᴅ ᴛᴏ ᴛᴀᴋᴇ sᴄʀᴇᴇɴsʜᴏᴛ.**")
 
-        await m.edit("Screenshot Uploading...")
+        await m.edit("**ᴜᴘʟᴏᴀᴅɪɴɢ...**")
         await message.reply_photo(photo, reply_markup=button)
         await m.delete()
     except Exception as e:
