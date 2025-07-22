@@ -56,7 +56,6 @@ async def take_ss(_, message: Message):
         return await eor(
             message,
             text="**👉 Enter command with correct url**\n\n```Example:\n/webss https://pynoxi.com\n```",
-            parse_mode="Markdown"
             disable_web_page_preview=True,
         )
 
