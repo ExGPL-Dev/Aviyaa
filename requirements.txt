@@ -13,8 +13,8 @@ opencv-python
 pillow==9.5.0
 psutil
 py-tgcalls==0.9.7
-tgcrypto
-pyrogram==2.0.106
+pytgcrypto
+pyrofork
 python-dotenv
 pyyaml
 requests
