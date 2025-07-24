@@ -116,9 +116,7 @@ async def get_thumb(videoid):
         draw.text((565, 385), "00:00", (255, 255, 255), font=font_time)
         draw.text((1080, 385), duration, (255, 255, 255), font=font_time)
 
-        # 🧠 Dynamically load icons based on YT_THUMB env
-        yt_thumb = os.getenv("YT_THUMB", "1")
-        icon_path = f"Aviyaa/assets/aviyaa-player-{yt_thumb}.png"
+        icon_path = f"Aviyaa/assets/aviyaa-player-1.png"
         if os.path.exists(icon_path):
             icons = Image.open(icon_path)
             picons = icons.resize((580, 62))
