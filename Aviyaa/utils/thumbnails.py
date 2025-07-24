@@ -13,8 +13,6 @@ from youtubesearchpython.__future__ import VideosSearch
 from Aviyaa import app
 from config import YOUTUBE_IMG_URL
 
-load_dotenv()  # Load .env file
-
 
 def changeImageSize(maxWidth, maxHeight, image):
     ratio = min(maxWidth / image.size[0], maxHeight / image.size[1])
